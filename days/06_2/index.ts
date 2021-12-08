@@ -1,6 +1,6 @@
-import { readFile } from '../../utils';
+import { readCSV } from '../../utils';
 
-const starts = readFile(__dirname, './input.txt').split(',').map((start => parseInt(start, 10)));
+const starts = readCSV(__dirname, './input.txt').map((start => parseInt(start, 10)));
 
 const gestation = 6;
 const puberty = 2;

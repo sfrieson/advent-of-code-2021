@@ -8,10 +8,17 @@ export function readFile(...filepathParts: string[]): string {
   return file.trim();
 }
 
+
 export function readLines(...filepathParts: string[]): string[] {
   const file = readFile(...filepathParts)
-
+  
   return splitOnNewlines(file.trim());
 }
 
 export const splitOnNewlines = (txt: string) => txt.split('\n');
+
+export function readCSV(...filepathParts: string[]) {
+  const file = readFile(...filepathParts)
+
+  return file.split(',')
+}
