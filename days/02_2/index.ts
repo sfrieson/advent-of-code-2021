@@ -1,4 +1,4 @@
-import { readLines } from '~/utils';
+import { readLines } from '../../utils';
 
 const input = readLines(__dirname, './input.txt');
 

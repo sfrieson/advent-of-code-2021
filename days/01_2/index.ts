@@ -1,4 +1,4 @@
-import { readLines } from '~/utils';
+import { readLines } from '../../utils';
 
 
 const mapToInt = (str: string) => parseInt(str, 10);
